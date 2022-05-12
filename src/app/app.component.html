@@ -12,7 +12,7 @@
         />
         <div
           *ngIf="
-            (name.dirty || message) &&
+            (name.touched || message) &&
             name.invalid
           "
           class="msgerror"
