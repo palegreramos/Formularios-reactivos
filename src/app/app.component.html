@@ -20,9 +20,10 @@
           <div *ngIf="name.errors.required">
             Wine Name is required
           </div>
-          <div *ngIf="name.errors.invalid">
-          Wine Name no es correcto
+          <div *ngIf="name.errors.invalidName">
+          Wine Name incorrect {{name.errors.invalidName}}
         </div>
+
         </div>
       </div>
 
