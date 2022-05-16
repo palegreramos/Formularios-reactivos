@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
-
+import {Wine} from './wine';
 import { ValidateName } from './nombre.validator';
 
-interface Wine {
-  name:string;
-  price:number;
-  imageUrl:string;
-  onSale:boolean;
-  }
+
 
 @Component({
   selector: 'my-app',
