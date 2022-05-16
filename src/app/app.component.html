@@ -37,15 +37,15 @@
         />
         <div
           *ngIf="
-            (price.dirty || message) &&
-            price.invalid
+            (price?.dirty || message) &&
+            price?.invalid
           "
           class="msgerror"
         >
-          <div *ngIf="price.errors.required">
+          <div *ngIf="price?.errors?.['required']">
             Wine Price is required
           </div>
-          <div *ngIf="price.errors.min">
+          <div *ngIf="price?.errors?.['min']">
           Wine Price must be > 1
         </div> 
         </div>
@@ -65,10 +65,10 @@
           "
           class="msgerror"
         >
-          <div *ngIf="imageUrl.errors.required">
+          <div *ngIf="imageUrl?.errors?.['required']">
             Wine Image URL is required
           </div>
-          <div *ngIf="imageUrl.errors.pattern">
+          <div *ngIf="imageUrl?.errors?.['pattern']">
             Wine Image URL does not seem to be a valid URL
           </div>
         </div>
