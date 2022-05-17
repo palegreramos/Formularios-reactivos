@@ -42,10 +42,10 @@
           "
           class="msgerror"
         >
-          <div *ngIf="price?.errors?.['required']">
+          <div *ngIf="price?.errors?.hasError('required')">
             Wine Price is required
           </div>
-          <div *ngIf="price?.errors?.['min']">
+          <div *ngIf="price?.errors?.hasError('min')">
           Wine Price must be > 1
         </div> 
         </div>
